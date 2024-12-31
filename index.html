@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+
+        }
+
+        .column-1 {
+            padding: 20px;
+            justify-content: flex-end;
+            width: auto;
+            position: sticky;
+            left: 0;
+            top: 0;
+            
+
+        }
+
+        .column-2 {
+            padding: 40px;
+            color: grey;
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+        }
+        .photo-grid{
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+            gap: 10px; 
+            color: black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        .photo-grid img{
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .photo-grid img:hover{
+            transform: scale(1.05); 
+        }
+
+        .header h1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            line-height: 10px;
+            font-size: xx-large;
+        
+           
+
+        }
+
+        .header h5 {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: grey;
+            font-size: medium;
+        }
+
+        .about h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+        }
+        .about p{
+            font-size: x-large;
+        }
+
+        .skills h2{
+             color: black;
+        }
+        .skills li{
+            font-size: x-large;
+            line-height: 50px;
+        }
+        .contact h2{
+             color: black;
+        }
+        .contact{
+            line-height: 50px;
+            font-size: x-large;
+        }
+       
+        .form{
+            padding: 20px;
+            
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: gray;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .footer{
+            font-size: x-large;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--image-->
+        <div class="column-1">
+            <img src="./bridge.jpg" width="900px" height="900px">
+        </div>
+        <div class="column-2">
+            <!--Header-->
+            <div class="header">
+                <br><br><br>
+                <h1>Princess Maharjan</h1>
+                <h5>Photographer and Architect</h5>
+                <br><br><br><br><br>
+                        </div>
+            <!--photo-grid-->
+            <div class="photo-grid">
+                <h2>Photos</h2>
+                <img src="https://plus.unsplash.com/premium_photo-1733514692327-967cdc0dc987?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    width="200px">
+                <img src="https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    width="200px">
+                <img src="https://images.pexels.com/photos/885021/pexels-photo-885021.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    width="200px">
+                <img src="https://cdn.pixabay.com/photo/2017/03/28/12/00/ancient-2181889_960_720.jpg"
+                    width="200px">
+                <img src="https://cdn.pixabay.com/photo/2017/04/30/19/33/italy-2273767_640.jpg"
+                    width="200px">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/02/53/bottles-1866945__340.jpg" width="200px">
+                <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D"
+                    width="200px"> 
+                <img src="https://cdn.pixabay.com/photo/2017/03/28/12/02/candles-2181896__340.jpg" width="200">
+
+              <br><br><br><br><br><br><br><br><br>
+
+            </div>
+            <!--About-->
+            <div class="about">
+                <h2>About Me</h2>
+                <p>Hi, I'm Princess Maharjan, an architectural designer passionate about creating sustainable,
+                    functional, and visually inspiring spaces. With a background in Architecture from Harvard University
+                    and 1 year xperience and internship at Khobu Bonds, I specialize in Interrior design and urban
+                    planning. My work combines innovative technology, such as parametric modeling, with a deep respect
+                    for traditional design principles. I'm particularly inspired by natural forms and their interaction
+                    with built environments.When I'm not designing, I enjoy photography, sketching cityscapes, and
+                    exploring how architecture can positively impact communities.</p>
+                    <br><br><br><br>
+
+            </div>
+            <!--Skills-->
+            <div class="skills">
+                <ul>
+                <h2>My Skills</h2>
+                <li>Photography</li>
+                <li>Space Planning</li>
+                <li>Sustainable Design</li>
+                <li>Urban Design and Planning</li>
+                <li> Interior Detailing</li>
+                </ul>
+                
+            </div>
+            <!--Contact-->
+            <div class="contact">
+                <h2>Contact Me</h2>
+                <i class="material-icons">location_on</i><a href="#">Khokana,Lalitpur,Nepal</a><br>
+                <i class="material-icons">phone</i><a href="#">9841081707</a><br>
+                <i class="material-icons">email</i><a href="#">maharjanprincess849@gmail.com</a>
+                <br><br><br><br>
+            </div>
+            <div class="form">
+                <form>
+                    <p>Let's get in touch.Send me message</p>
+                    
+                    <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send</button>
+                </form>
+
+            </div>
+            <!--footer-->
+            <div class="footer">
+                <footer>
+                    <footer>
+                        <p>&copy; 2024 Princess Maharjan. All rights reserved.</p>
+
+                    </footer>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
